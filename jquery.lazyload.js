@@ -124,7 +124,7 @@
 
                             if (settings.load) {
                                 var elements_left = elements.length;
-                                settings.load.call(self, elements_left, settings);
+                                settings.load.call(self, elements_left, settings, this);
                             }
                         })
                         .attr("src", $self.attr("data-" + settings.data_attribute));
